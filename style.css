@@ -9,6 +9,16 @@
     list-style-type: none;
 }
 
+.list > li {     /* > означает что изменения будут применены только к дочернему элементу */
+    width: 70px;
+    height: 25px;
+    border: 1px solid #000
+}
+
+.list + h3 {     /* + означает соседний элемент */
+    color: darkgreen;
+}
+
 .link {
     text-decoration: none;
     text-transform: uppercase;
@@ -28,5 +38,26 @@ img[alt="phone"] {
 
 p {
     font-size: 14px;
-    
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+p { /* !important максимальный приоритет */
+    text-align: left!important;
+}
+
+p { /* в html документе указан стиль, он приоритетнее */
+    color: antiquewhite
+}
+
+.menu li {
+    height: 100px;
+}
+
+li {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #000;
 }
