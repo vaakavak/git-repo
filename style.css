@@ -88,3 +88,19 @@ li {
 .menu li a:active {
     color: green;
 }
+/*Добавление элементов после текста*/
+.Plist li:nth-child(3):after {
+    content: " new";
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+.menu li:hover:before {
+    content: " >>";
+    color: red;
+}
+/*обращение к первому элементу*/
+.text:first-letter {
+    font-size: 30px;
+    color: brown
+}
